@@ -1,0 +1,211 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    color: var(--black);
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBuzoBNqtXckb_IwYG9b18-0FTAWdBFGyxgg&usqp=CAU");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Segoe, "Franklin Gothic Medium", "Helvetica Neue", Arial, sans-serif;
+}
+
+.header {
+    background: url(https://www.suburban-south-veterinary-hospital.com/s/img/emotionheader.jpg) no-repeat;
+    width: 100%;
+    height: 200px;
+    text-align: left;
+    padding-left: 10px;
+    text-transform: uppercase;
+    color: #cccc00;
+}
+
+.form-inputs {
+    width: 950px;
+    background: #fff;
+    padding: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 500px;
+    margin-top: 15px;
+    overflow: auto;
+}
+
+.form-inputs .buttons {
+    background: #99ff99;
+    height: 60px;
+    padding-top: 10px;
+}
+
+.form-inputs .buttons button {
+    background-color: #c2fbd7;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.form-inputs .buttons button:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.form-inputs #client-form,
+.form-inputs #pet-form {
+    margin-top: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    background: rgba(30, 209, 24, 0.7);
+    padding-top: 10px;
+    width: 500px;
+    height: 250px;
+    display: inline-block;
+}
+
+.form-inputs #output {
+    padding-top: 30px;
+}
+
+.form-inputs #client-form h2,
+.form-inputs #pet-form h2 {
+    padding-bottom: 10px;
+    font-size: 30px;
+    color: #cccc00;
+}
+
+.form-inputs #client-form input, 
+.form-inputs #pet-form input{
+  width: 200px;
+  height: 25px;
+  border-radius: 4px;
+}
+
+.form-inputs #client-form label, 
+.form-inputs #pet-form label{
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.form-inputs #client-form .module:nth-child(2){
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.form-inputs #client-form .module:nth-child(3){
+  padding-bottom: 5px;
+  padding-right: 15px;
+}
+
+.form-inputs #client-form .module:nth-child(4){
+  padding-bottom: 5px;
+}
+
+.form-inputs #client-form .module:nth-child(5){
+  padding-bottom: 15px;
+  padding-right: 75px;
+}
+
+.form-inputs #client-form button,
+.form-inputs #pet-form button{
+    margin-bottom: 8px;
+    margin-top: 5px;
+    background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    background-color:#ededed;
+    border-radius:10px;
+    border:1px solid #d6bcd6;
+    display:inline-block;
+    cursor:pointer;
+    color:#3a8a9e;
+    font-family:Arial;
+    font-size:16px;
+    font-weight:bold;
+    padding:10px 40px;
+    text-decoration:none;
+}
+
+.form-inputs #client-form button:hover, 
+.form-inputs #pet-form button:hover{
+    background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+    background-color:#bab1ba;
+}
+.form-inputs #client-form button:active,
+.form-inputs #pet-form button:active {
+    position:relative;
+    top:1px;
+}
+
+.form-inputs #pet-form select{
+  width: 200px;
+  height: 25px;
+  border-radius: 4px;
+}
+
+.form-inputs #pet-form .module:nth-child(2){
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.form-inputs #pet-form .module:nth-child(3){
+  padding-bottom: 5px;
+  padding-left: 15px;
+}
+
+.form-inputs #pet-form .module:nth-child(4){
+  padding-bottom: 15px;
+  padding-right: 5px;
+}
+
+table, th, td {
+  border:1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.client-table th{
+  background: #99ff99;
+  padding: 10px 10px;
+}
+
+
+.pet-table th{
+  background: #99ff99;
+  padding: 10px 10px;
+}
+
